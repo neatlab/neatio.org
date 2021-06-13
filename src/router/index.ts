@@ -2,7 +2,8 @@ import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
 import Home from "../views/Home.vue";
 import About from "../views/About.vue";
-import Features from "../views/Features.vue";
+import Generate from "../views/Generate.vue";
+import Transfer from "../views/Transfer.vue";
 import Terms from "../views/Terms.vue";
 
 
@@ -20,9 +21,14 @@ const routes: Array<RouteConfig> = [
     component: About
   },
   {
-    path: "/features",
-    name: "Features",
-    component: Features
+    path: "/generate",
+    name: "Generate",
+    component: Generate
+  },
+  {
+    path: "/transfer",
+    name: "Transfer",
+    component: Transfer
   },
   {
     path: "/terms",

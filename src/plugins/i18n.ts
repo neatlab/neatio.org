@@ -7,7 +7,8 @@ const messages = {
   en: {
     pageLink: {
       home: `Home`,
-      about: `About`,
+      generate: `Generate`,
+      transfer: `Transfer`,
       explorer: `Scanner`,
       terms: `Terms`
     },
@@ -15,12 +16,12 @@ const messages = {
     pages: {
       // HOME
       home: {
-        welcomeMsg: `THIS IS NEAT`,
-        welcomeNote: `Blazing Fast, Ultra Secure and ECO Friendly Payment Solution Powered By Blockchain Technology`,
+        welcomeMsg: `THIS IS NEAT WEB WALLET`,
+        welcomeNote: `Here you can create new wallets, send NEAT and register validators.`,
         },
       // ABOUT & FEATURES
-      about: {
-        pageTitle1: `Who we are?`,
+      generate: {
+        pageTitle1: `Your wallet address is:`,
         pageSubTitle1: `We are a team of software engineers and developers passionate about blockchain technology with a strong belief in the freedom and privacy of each individual. Our team is a perfect blend of core developers and UX/UI designers. We all love Bitcoin since it introduced us the amazing world of blockchain technology, we also love Ethereum and the smart contract technology but since both BTC and ETH became store of value rather than a peer-to-peer electronic cash system (like it was stated in the Bitcoin whitepaper by Satoshi Nakamoto) we decided to bring Neatio to life.`,
 
         pageTitle2: `What is Neatio?`,
@@ -29,27 +30,13 @@ const messages = {
         pageTitle3: `Our mission.`,
         pageSubTitle3: `We aim to provide one of the fastest and secure means of payment based on the state of the art blockchain technology. Why blockchain? Because it is decentralized and very secure. One of our main goals is to integrate the payment solution with as many merchants as possible, all over the world. Throughout, but not limited to our simple, yet efficient,  One Click Pay Neat browser extension. Note, the browser extension is not yet available, and is under development (work in progress). Stay tuned!`,
 
-
-        feature1Title: `FAST`,
-        feature1SubTitle: `Neatio is Fast. Blazing Fast`,
-        feature1Description: `Neatio (NEAT) is an ultra fast payment solution, with a bloc time of way less than a second, 50 milliseconds to be precise. But since we think that anything under one second is negligible in day-to-day real world use, we enforced a space of one second in the consensus protocol. Even so, the protocol can execute a few thousands of transactions per second (TPS) on the main-chain alone, not counting the side-chains.`,
-
-        feature2Title: `SECURE`,
-        feature2SubTitle: `Neatio is secure. Ultra Secure.`,
-        feature2Desc: `Making full use of the advantages of the blockchain technology and in combination with the BFT (Byzantine Fault Tolerance) consensus protocol, Neatio is an ultra secure payment solution, since the transactions are confirmed as soon as they are included in the block. With Neatio there is no need for block confirmations, making it ideal for merchants in day-to-day use and in our crazy, fast-forward lives that we are living today.`,
         
-        feature3Title: `SCALABLE`,
-        feature3SubTitle: `Neatio is highly scalable.`,
-        feature3Desc: `As mentioned before, Neatio blockchain is composed of one main chain and multiple derived side-chains all connected together acting like one single blockchain network, making the platform ultra scalable. In theory there is no limit on how many side-chains can run on the network. In our tests we managed to hit a peak of over 3500 TPS on the main-chain only, which we think is more than enough for today's scalability requirements.`,
+        walletAddress: `Your wallet address is:`,
 
-
-        feature4Title: `ECO`,
-        feature4SubTitle: `Neatio is ECO Friendly.`,
-        feature4Description: `The Neatio network is based on the PoS ( Proof-Of-Stake) mechanism and is maintained by its validators, making it energy efficient, thus environmentally friendly. At Neatio you don’t need expensive mining equipment since you can run a Neatio network node on an average laptop or a $10 Cloud Server (VPS).`,
-
-        feature5Title: `HANDY`,
-        feature5SubTitle: `Neatio is User Friendly.`,
-        feature5Description: `We also decided to use only 2 decimals for a more pleasant and familiar user experience since everyone is used to the traditional money system rather than the crypto divisibility system. In theory it is the same thing but psychologically is not. Why?  Because people are expecting to see a price of, let’s say, 4.99 USD for a coffee rather than 0.00009999 BTC or 0.0033000000000000 ETH.`,
+        disclaimer1: `KINDLY REMINDER!`,
+        disclaimer2: ` Do not forget to save your wallet file.`,
+        disclaimer3: ` The wallet cannot be recovered if you lose the private key.`,
+        disclaimer4: ` Please keep it safe and be careful with how you store and use it.`,
 
 
       },

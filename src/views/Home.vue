@@ -6,12 +6,20 @@
           <h1 class="hero__title">{{ $t("pages.home.welcomeMsg") }}</h1>
           <div class="hero__subTitle">{{ $t("pages.home.welcomeNote") }}</div>
             <div class="btn">  
-               <router-link to="/features" >
+               <router-link to="/generate" >
                  <svg>               
                    <rect x="0" y="0" fill="none" width="166" height="45"/>
-                 </svg> DISCOVER
+                 </svg> CREATE NEW
                </router-link>     
             </div>
+                        <div class="btn">  
+               <router-link to="/transfer" >
+                 <svg>               
+                   <rect x="0" y="0" fill="none" width="166" height="45"/>
+                 </svg> TRANSFER
+               </router-link>     
+            </div>
+
           </div>
       </div>
     </div>

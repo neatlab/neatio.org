@@ -42,59 +42,70 @@
     }
   }
 
-  &__title {
-    @include font-size(5);
+  &__addr {
+    @include font-size(3);
     font-family: "Lato-Bold";
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 25px;
+    padding-bottom: 50px;
     position: relative;
+    color: #00BFFF;
+    
 
     @include mq-med {
-      @include font-size(3.6);
+      @include font-size(1.8);
     }
   }
+
+  &__balance {
+    @include font-size(3);
+    font-family: "Lato-Bold";
+    font-weight: 400;
+    line-height: 1.3;
+    padding-bottom: 50px;
+    position: relative;
+    color: #A6FF33;
+    
+
+    @include mq-med {
+      @include font-size(1.8);
+    }
+  }
+
+  &__title {
+    @include font-size(3);
+    font-family: "Lato-Bold";
+    font-weight: 400;
+    line-height: 1.3;
+    padding-bottom: 50px;
+    position: relative;
+    color: red;
+    
+
+    @include mq-med {
+      @include font-size(1.8);
+    }
+  }
+
+  
 
   &__subTitle {
     @include font-size(1.8);
     font-family: "Lato-Semibold";
-    margin-bottom: 60px;
     line-height: 1.8;
+    position: relative;
+    color: #00BFFF;   
   }
 
-  &__graphic {
-    display: flex;
-    flex: 1;
-    justify-content: flex-end;
-    padding: 0 60px 0;
-    z-index: 5;
-    
-    @include mq-med {
-      position: absolute;
-      top: auto;
-      bottom: 40px;
-      right: 0px;
-      opacity: 0.5;
-    }
-
-    @include mq-lrg {
-      padding: 40px 40px 0 0;
-    }
-
-    span {
-      display: inline-block;
-      width: 380px;
-      height: 380px;
-      background: #fff;
-      background-size: cover;
-
-      @include mq-lrg {
-        width: 280px;
-        height: 280px;
-      }
-    }
+  &__subTitle2 {
+    @include font-size(1.4);
+    font-family: "Lato-Regular";
+    line-height: 1.8;
+    position: relative;
+    color: #fff;   
   }
 }
+
 
 
 .section {
@@ -294,7 +305,7 @@
     @include font-size(1.6);
   }
 
-  &__features {
+  &__generate {
     @include font-size(2.4); 
     font-weight: 700;
     text-align: center;
@@ -320,32 +331,6 @@
     }
   }
 
-  &__graphic {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 0;
-    padding-left: 40px;
-
-    @include mq-med {
-      padding-top: 30px;
-    }
-
-    img {
-      max-width: 420px;
-      max-height: 420px;
-
-      @include mq-med {
-        max-width: 280px;
-        max-height: 280px;
-      }
-
-      @include mq-sml {
-        max-width: 280px;
-        max-height: 280px;
-      }
-    }
-  }
 
   &--alt {
     padding-top: 0;
@@ -368,123 +353,123 @@
 }
 
 
-.dual-sections {
-  display: flex;
+// .dual-sections {
+//   display: flex;
 
-  @include mq-med {
-    display: block;
-  }
+//   @include mq-med {
+//     display: block;
+//   }
 
-  &__info {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 40px 80px 40px 80px;
+//   &__info {
+//     flex: 1;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     padding: 40px 80px 40px 80px;
 
-    @include mq-med {
-      padding: 0 0px 0  0px;
-    }
+//     @include mq-med {
+//       padding: 0 0px 0  0px;
+//     }
 
-  }
+//   }
 
-  &__title {
-    letter-spacing: 0.05em;
-    @include font-size(2.4);
-    @include title-underline();
-  }
+//   &__title {
+//     letter-spacing: 0.05em;
+//     @include font-size(2.4);
+//     @include title-underline();
+//   }
 
-  &__image {
-    flex: 1;
-    display: flex;
-    align-items: center;
+//   &__image {
+//     flex: 1;
+//     display: flex;
+//     align-items: center;
 
-    @include mq-med {
-      display: flex;
-      justify-content: center;
-      padding: 0;
-    }
+//     @include mq-med {
+//       display: flex;
+//       justify-content: center;
+//       padding: 0;
+//     }
 
-    img {
-      max-width: 400px;
-      max-height: 400px;
-      display: block;
+//     img {
+//       max-width: 400px;
+//       max-height: 400px;
+//       display: block;
 
-      @include mq-med {
-        max-width: 300px;
-        max-height: 300px;
-      }
+//       @include mq-med {
+//         max-width: 300px;
+//         max-height: 300px;
+//       }
 
-      @include mq-sml {
-        max-width: 280px;
-        max-height: 280px;
-      }
-    }
+//       @include mq-sml {
+//         max-width: 280px;
+//         max-height: 280px;
+//       }
+//     }
 
-    &--sm {
-      justify-content: center;
+//     &--sm {
+//       justify-content: center;
 
-      img {
-        max-width: 360px;
-        max-height: 360px;
-      }
-    }
-  }
+//       img {
+//         max-width: 360px;
+//         max-height: 360px;
+//       }
+//     }
+//   }
 
-  &--reverse {
-    flex-direction: row-reverse;
+  // &--reverse {
+  //   flex-direction: row-reverse;
 
-    .dual-sections__info {
-      flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 40px 0 40px 0;
+    // .dual-sections__info {
+    //   flex: 1;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // padding: 40px 0 40px 0;
 
-      @include mq-med {
-        padding: 0 0px 0  0px;
-      }
-    }
+    //   @include mq-med {
+    //     padding: 0 0px 0  0px;
+    //   }
+    // }
   
 
     
-    .dual-sections__image {
-      flex: 1;
-    display: flex;
-    align-items: center;
+//     .dual-sections__image {
+//       flex: 1;
+//     display: flex;
+//     align-items: center;
 
-      @include mq-med {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-      }
+//       @include mq-med {
+//         display: flex;
+//         justify-content: center;
+//         padding: 0;
+//       }
 
-      img {
-        max-width: 400px;
-        max-height: 400px;
-        display: block;
+//       img {
+//         max-width: 400px;
+//         max-height: 400px;
+//         display: block;
 
-        @include mq-med {
-          max-width: 300px;
-          max-height: 300px;
-        }
+//         @include mq-med {
+//           max-width: 300px;
+//           max-height: 300px;
+//         }
 
-        @include mq-sml {
-          max-width: 280px;
-          max-height: 280px;
-        }
-      }
+//         @include mq-sml {
+//           max-width: 280px;
+//           max-height: 280px;
+//         }
+//       }
 
-      &--sm {
-      justify-content: center;
+//       &--sm {
+//       justify-content: center;
 
-        img {
-          max-height: 400px;
-        }
-      }
-    }
-  }
-}
+//         img {
+//           max-height: 400px;
+//         }
+//       }
+//     }
+
+
 
 
 .footer {
@@ -492,7 +477,7 @@
   width: 100%;
   background: transparent;
   color: #fff;
-  position: relative;
+  position: inherit;
   display: flex;
   flex-direction: column;
   align-items: center;
