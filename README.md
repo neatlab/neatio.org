@@ -1,4 +1,3 @@
-# NEAT Web Wallet
-Written in TypeScript, built with Vue.js
+# NEAT Site
 
-NOTE: Use Node version 14.17.0 
+Written in TypeScript, built with Vue.js

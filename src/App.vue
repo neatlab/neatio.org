@@ -20,13 +20,13 @@
 
 
           <div class="nav__item" @click="onClickNav()">
-            <router-link to="/generate">{{
-              $t("pageLink.generate")
+            <router-link to="/about">{{
+              $t("pageLink.about")
             }}</router-link>
           </div>
           <div class="nav__item" @click="onClickNav()">
-            <router-link to="/transfer">
-            {{ $t("pageLink.transfer") }}
+            <router-link to="/features">
+            {{ $t("Features") }}
             </router-link>
           </div>
 
@@ -174,8 +174,6 @@
 
 <script lang="ts">
 import i18n from "@/plugins/i18n";
-
-
 
 export default {
   name: "app",
